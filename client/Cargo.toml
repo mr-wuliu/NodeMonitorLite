@@ -1,0 +1,20 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+common = { path = "../common"}
+clap = { version = "*", features = ["derive"]}
+serde = { version = "*", features = ["derive"]}
+toml = "*"
+sysinfo = "*"
+tokio = { version = "*", features = ["macros", "rt-multi-thread", "time"] }
+tokio-stream = "*"
+tokio-util = "*"
+tonic = "*"
+chrono = { version = "*", default-features = false, features = ["clock"] }
+
+[[bin]]
+name = "client"
+path = "src/main.rs"
