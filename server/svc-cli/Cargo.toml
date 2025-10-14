@@ -1,0 +1,11 @@
+[package]
+name = "svc-cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+common = { path = "../../common" }
+tonic = "*"
+tokio = { version = "*", features = ["full"] }
+tokio-stream = "*"
+uuid = { version = "*", features = ["v4", "fast-rng"] }
