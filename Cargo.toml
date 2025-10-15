@@ -1,7 +1,6 @@
 [workspace]
 members = [
-    "server/svc-deamon",
-    "server/svc-cli",
+    "server",
     "client",
     "common"
 ]

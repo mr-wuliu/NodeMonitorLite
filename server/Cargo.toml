@@ -1,0 +1,16 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+common = { path = "../common" }
+tonic = "*"
+tokio = { version = "*", features = ["full"] }
+tokio-stream = "*"
+uuid = { version = "*", features = ["v4", "fast-rng"] }
+clap = { version ="*", features = ["derive"] }
+
+[[bin]]
+name = "nmls"
+path = "src/main.rs"
